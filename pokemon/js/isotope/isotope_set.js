@@ -46,6 +46,7 @@ $(function() {
 				queue: false
 			}
 		});
+		return false;
 	});
 
 // flatten object by concatting values
