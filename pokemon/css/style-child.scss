@@ -1,0 +1,278 @@
+@import "compass";
+
+/* スマホ表示CSS
+-------------------------------------------------------------- */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* 共通CSS
+-------------------------------------------------------------- */
+
+/* 基本 */
+
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* footer
+-------------------------------------------------------------- */
+
+/* グローバルナビ
+-------------------------------------------------------------- */
+
+/* 固定ページ（Home）
+-------------------------------------------------------------- */
+
+/*------------------------------------------------------------
+*
+* タブレット用レスポンシブcss画面の横幅が768px以下
+*
+-------------------------------------------------------------- */
+@media screen and (max-width: 768px) {}
+
+/*------------------------------------------------------------
+*
+* スマホ用レスポンシブcss画面の横幅が640px以下
+*
+-------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+/* スマホ表示CSS
+-------------------------------------------------------------- */
+.pc {
+	display: none;
+}
+.sp {
+	display: block;
+}
+/* レイアウトCSS
+-------------------------------------------------------------- */
+.content1, .content2, .content3, .content4, .content5, .content6, .content-first, .content2:first-child, .content3:first-child, .content4:first-child, .content5:first-child, .content6:first-child {
+	float: none;
+	margin: 0 auto 20px;
+	width: 80%;
+}
+/* 基本
+-------------------------------------------------------------- */
+#main{
+	width: 100%;
+	float: none;
+}
+
+#main-left {
+	@extend #main;
+}
+
+#main-right {
+	@extend #main-left;
+}
+
+#side-left {
+	float: none;
+	display: none;
+}
+
+#side-right {
+	@extend #side-left;
+}
+
+.thumb {
+	float: none;
+	margin: 0 auto 20px;
+}
+
+.excerpt {
+	float: none;
+	margin: 0;
+}
+
+#share ul li {
+	margin-bottom: 20px;
+}
+
+/* header
+-------------------------------------------------------------- */
+.head-logo, .head-tel {
+	float: none;
+	margin: 0 auto 0px;
+	text-align: center;
+}
+/* footer
+-------------------------------------------------------------- */
+#footer {
+	margin-top: 100px;
+}
+
+.foot-left, .foot-right {
+	float: none;
+	width: 100%;
+	margin-bottom: 35px;
+}
+.footer-logo, .footer-tel, .footer-add, .copy {
+	text-align: center;
+}
+/* グローバルナビ
+-------------------------------------------------------------- */
+.navigation {
+	padding: 0;
+}
+.primary {
+	display: none;
+}
+.primary-navigation {
+	border-top-width: 5px;
+	 li {
+		 line-height: 3.5rem;
+		&.menu-item {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 0;
+			padding: 0;
+			border-top: 1px solid #fff;
+			border-bottom: none;
+		}
+		a {
+			display: block;
+		}
+	}
+}
+#toggle {
+	display: block;
+	position: relative;
+	width: 100%;
+	background: none;
+	a {
+		display: block;
+		position: relative;
+		padding: 12px 0 10px;
+		height: 1.7rem;
+		text-align: center;
+		text-decoration: none;
+	}
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		width: 20px;
+		height: 20px;
+		margin-top: -10px;
+		background: #fff;
+	}
+	a {
+		&:before, &:after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			width: 20px;
+			height: 4px;
+			background: #5CD47E;
+		}
+		&:before {
+			margin-top: -6px;
+		}
+		&:after {
+			margin-top: 2px;
+		}
+	}
+}
+/* training
+-------------------------------------------------------------- */
+.enemy_wrapp {
+	.enemy {
+		max-width: 100%;
+		
+		p img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.thumb.enemy {
+		float: left;
+		width: 33.33%;
+		margin-bottom: 0;
+	}
+}
+
+
+/* pokemon
+-------------------------------------------------------------- */
+.technique_table {
+	tr {
+		th {
+			display: block;
+		}
+		td {
+			display: inline-block;
+			border-left: none;
+			border-right: 1px solid #ccc;
+							
+			&:last-child {
+				border-right: none;
+				display: block;
+			}
+		}
+	}
+	.heading {
+		display: none;
+	}
+}
+
+/* データベース
+-------------------------------------------------------------- */
+.content5.pokeitem {
+	width: 48%;
+	float: left;
+	margin-bottom: 20px;
+	
+	&:nth-of-type(2n+1) {
+		clear: both;
+	}
+	a {
+		min-height: 260px;
+	}
+}
+
+.filters-select {
+	font-size: 1.25rem;
+	width: 100%;
+	margin: 10px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	@include border-radius(5px);
+}
+
+.battle_btn-wrap {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* プロフィール
+-------------------------------------------------------------- */
+.author-description {
+	float: none;
+	width: auto;
+}
+
+.user_post_list {
+	.thumb {
+		float: left;
+	}
+	.excerpt {
+		float: left;
+		width: 73%;
+		margin-left: 2%;
+	}
+}
+
+
+}
